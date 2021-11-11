@@ -1,0 +1,19 @@
+@use "../abstracts/mixins" as *;
+
+.three-elements {
+  margin-inline: auto;
+  @include media("large") {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &--features {
+    padding: 5rem 0;
+
+    column-gap: 3rem;
+
+    & > * {
+      margin-bottom: 3rem;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@use "../abstracts/mixins" as *;
+
+@include withVersions("col") {
+  display: flex;
+}
+
+.jc--sbw {
+  justify-content: space-between;
+}
+
+.ai--center {
+  align-items: center;
+}

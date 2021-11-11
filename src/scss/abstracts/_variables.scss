@@ -1,0 +1,41 @@
+@use "./mixins" as *;
+
+:root {
+  //colors
+  --clr-dark-100: rgb(0, 0, 0);
+  --clr-dark-90: rgba(--clr-dark-100, 0.6);
+  --clr-light-100: rgb(255, 255, 255);
+  --clr-light-95: rgb(--clr-light-100, 0.25);
+  --clr-light-90: rgba(223, 223, 223, 0.9);
+  --clr-accent-1: #ffc593;
+  --clr-accent-2: #bc7198;
+  --clr-accent-3: #5a77ff;
+
+  //font-families
+  --ff-sans: "DM Sans", sans-serif;
+
+  //font-sizes
+  --fs-100: 0.75rem;
+  --fs-200: 0.8125rem;
+  --fs-300: 0.875rem;
+  --fs-400: 0.9375rem;
+  --fs-500: 1.125rem;
+  --fs-600: 1.5rem;
+  --fs-700: 1.875rem;
+  @include media("medium") {
+    --fs-700: 2.25rem;
+  }
+  @include media("large") {
+    --fs-400: 1rem;
+    --fs-700: 2.5rem;
+  }
+
+  //letter-spacings
+  --letter-spacing-s: 2px;
+  --letter-spacing-l: 4.17px;
+
+  //line-heights
+  --line-height-s: 16px;
+  --line-height-m: 25px;
+  --line-height-l: 48px;
+}

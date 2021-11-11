@@ -1,0 +1,10 @@
+.feature {
+  --s-1: 40px;
+  --s-2: 18px;
+  display: grid;
+  grid-template-rows: 120px repeat(2, max-content);
+  grid-template-columns: minmax(1px, 31ch);
+  place-items: center;
+
+  justify-content: center;
+}

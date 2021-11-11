@@ -1,0 +1,14 @@
+.link {
+  transition: color 350ms;
+
+  &:hover {
+    color: var(--clr-light-90);
+  }
+  .dark &:hover {
+    color: var(--clr-dark-90);
+  }
+
+  &--social:hover {
+    opacity: 0.3;
+  }
+}

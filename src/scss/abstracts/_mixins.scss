@@ -1,0 +1,111 @@
+@use "./maps" as *;
+
+// media
+@mixin media($min, $max: null) {
+  $min-width: 0px;
+  $max-width: null;
+
+  @if type-of($min) == "string" {
+    $min-width: map-get($breakpoints, $min);
+  } @else {
+    $min-width: $min;
+  }
+
+  @if $max {
+    @if type-of($max) == "string" {
+      $max-width: map-get($breakpoints, $max);
+    } @else {
+      $max-width: $max;
+    }
+
+    @media (min-width: $min-width) and (max-width: $max-width) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $min-width) {
+      @content;
+    }
+  }
+}
+
+//spacing
+@mixin spacing($s, $vs: $s) {
+  .#{$s} {
+    margin-bottom: var(--#{$vs}, 0);
+
+    .col > & {
+      margin-bottom: 0;
+      margin-right: var(--#{$vs}, 0);
+    }
+
+    .col--small > & {
+      @include media("small") {
+        margin-bottom: 0;
+        margin-right: var(--#{$vs}, 0);
+      }
+    }
+
+    .col--medium > & {
+      @include media("medium") {
+        margin-bottom: 0;
+        margin-right: var(--#{$vs}, 0);
+      }
+    }
+
+    .col--large > & {
+      @include media("large") {
+        margin-bottom: 0;
+        margin-right: var(--#{$vs}, 0);
+      }
+    }
+  }
+}
+
+//with versions
+@mixin withVersions($name) {
+  .#{$name} {
+    @content;
+
+    &--small {
+      @include media("small") {
+        @content;
+      }
+    }
+
+    &--medium {
+      @include media("medium") {
+        @content;
+      }
+    }
+
+    &--large {
+      @include media("large") {
+        @content;
+      }
+    }
+  }
+}
+
+// color-strip
+@mixin color-strip($position, $child: "after") {
+  $thickness: 5px;
+  position: relative;
+
+  &::#{$child} {
+    content: "";
+    position: absolute;
+
+    @if $position == "bottom" {
+      width: 100%;
+      height: $thickness;
+      top: 100%;
+
+      background-image: linear-gradient(
+        to right,
+        var(--clr-accent-1),
+        var(--clr-accent-2),
+        var(--clr-accent-3)
+      );
+    }
+  }
+}

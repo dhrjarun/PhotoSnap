@@ -1,0 +1,8 @@
+@use ".././abstracts/mixins" as *;
+
+@include withVersions("text-left") {
+  text-align: left;
+}
+@include withVersions("text-right") {
+  text-align: right;
+}

@@ -1,0 +1,93 @@
+@use "../abstracts/mixins" as *;
+
+.story {
+  cursor: pointer;
+
+  height: 480px;
+  padding: 2rem;
+  --s-1: 5px;
+  --s-2: 18px;
+
+  display: grid;
+  align-content: end;
+
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: rgb(199, 199, 199);
+
+  transition: transform 250ms ease-in-out;
+  color: var(--clr-light-100);
+
+  @include color-strip("bottom", "after");
+
+  &::after {
+    opacity: 0;
+    transition: opacity 250ms;
+  }
+
+  p {
+    font-size: var(--fs-300);
+    letter-spacing: 0.15px;
+  }
+
+  &__arrow {
+    max-width: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: var(--fs-100);
+    letter-spacing: 2px;
+
+    border-top: 1px solid rgba(white, 0.3);
+    padding-top: var(--s-2);
+
+    position: relative;
+  }
+  &__arrow::after {
+    content: "";
+    display: inline-block;
+    line-height: 2em;
+
+    width: 50px;
+    height: 1em;
+
+    position: absolute;
+    right: 0;
+
+    background-image: url("/images/arrow-white.svg");
+    background-position: center right;
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    transform: translateY(-30px);
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+.story--mountains {
+  background-image: url("/images/mountains-m.jpg");
+  @include media("large") {
+    background-image: url("/images/mountains.jpg");
+  }
+}
+.story--sunset {
+  background-image: url("/images/cityscapes-m.jpg");
+  @include media("large") {
+    background-image: url("/images/cityscapes.jpg");
+  }
+}
+.story--days {
+  background-image: url("/images/18-days-voyage-m.jpg");
+  @include media("large") {
+    background-image: url("/images/18-days-voyage.jpg");
+  }
+}
+.story--archi {
+  background-image: url("/images/architecturals-m.jpg");
+  @include media("large") {
+    background-image: url("/images/architecturals.jpg");
+  }
+}

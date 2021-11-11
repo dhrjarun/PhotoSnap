@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photosnap</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./scss/main.scss">
+
+    <!-- scripts -->
+    <script src="./scripts/navigation.js" defer></script>
+
+</head>
+<body>
+    <div class="container container--header">
+        <header class="primary-header col jc--sbw ai--center light">
+            <img src="./images/logo.svg" class="primary-header__logo" alt="Logo">
+            <button aria-expanded="false" aria-controls="nav" tabindex="-1" class="btn btn--nav-toggle primary-header__toggle" ><span class="sr-only">Menu</span></button>
+            <nav id="nav" class="primary-header__nav light" data-visible="false">
+                <ul role="list" class="list list--nav-header col--medium spacing--same">
+                    <li class="nav-item"><a href="#" class="link link--nav">Stories</a></li>
+                    <li class="nav-item"><a href="#" class="link link--nav">Features</a></li>
+                    <li class="nav-item"><a href="#" class="link link--nav">Pricing</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn btn--box primary-header__cta">Get an invite</a>
+        </header>
+    </div>
+
+    <section class="text-n-img text-n-img--inverted">
+        <div class="text-n-img__img">
+            <picture>
+                <source srcset="./images/create-and-share.jpg" media="(min-width: 1025px)">
+                <source srcset="./images/create-and-share-tablet.jpg" media="(min-width: 560px)">
+                <img src="./images/create-and-share-mobile.jpg" alt="Man seeing beautiful nature">
+            </picture>
+        </div>
+        <div class="text-n-img__text text-left dark">
+            <h1 class="s-1">Create and Share your photo stories.</h1>
+            <p class="s-2">Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.</p>
+            <a href="#" class="btn btn--arrow">Get an invite</a>
+        </div>
+    </section>
+
+    <section class="text-n-img">
+        <div class="text-n-img__img">
+            <picture>
+                <source srcset="./images/beautiful-stories.jpg" media="(min-width: 1025px)">
+                <source srcset="./images/beautiful-stories-tablet.jpg" media="(min-width: 560px)">
+                <img src="./images/beautiful-stories-mobile.jpg" alt="Man seeing beautiful nature">
+            </picture>
+        </div>
+        <div class="text-n-img__text text-left">
+            <h2 class="s-1">BEAUTIFUL STORIES EVERYTIME</h2>
+            <p class="s-2">We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.</p>
+            <a href="#" class="btn btn--arrow">View the stories</a>
+        </div>
+    </section>
+
+    <section class="text-n-img text-n-img--inverted">
+        <div class="text-n-img__img">
+            <picture>
+                <source srcset="./images/designed-for-everyone.jpg" media="(min-width: 1025px)">
+                <source srcset="./images/designed-for-everyone-tablet.jpg" media="(min-width: 560px)">
+                <img src="./images/designed-for-everyone-mobile.jpg" alt="Man seeing beautiful nature">
+            </picture>
+        </div>
+        <div class="text-n-img__text text-left">
+            <h2 class="s-1">DESIGNED FOR EVERYONE</h2>
+            <p class="s-2">Photosnap can help you create stories that resonate with your audience. Our tool is designed for photographers of all levels, brands, businesses you name it.</p>
+            <a href="#" class="btn btn--arrow">View the stories</a>
+        </div>
+    </section>
+
+    <section class="four-elements four-elements--stories text-left">
+        <div class="story story--mountains">
+            <h3 class="s-1">The Mountains</h3>
+            <p class="s-2">by John Appleseed</p>
+            <p class="story__arrow">Read Story</p>
+        </div>
+
+        <div class="story story--sunset">
+            <h3 class="s-1">Sunset Cityscapes</h3>
+            <p class="s-2">by Benjsamin Cruz</p>
+            <p class="story__arrow">Read Story</p>
+        </div>
+
+        <div class="story story--days">
+            <h3 class="s-1">18 Days Voyage</h3>
+            <p class="s-2">by Alexei Borodin</p>
+            <p class="story__arrow">Read Story</p>
+        </div>
+
+        <div class="story story--archi">
+            <h3 class="s-1">Architecturals</h3>
+            <p class="s-2">by Samantha Brooke</p>
+            <p class="story__arrow">Read Story</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="three-elements three-elements--features">
+            <div class="feature feature--respo">
+                <img src="./images/responsive.svg" class="feature__img s-1" alt="icon of Responsive">
+                <h3 class="s-2">100% Responsive</h3>
+                <p>No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.</p>
+            </div>
+
+            <div class="feature feature--upload">
+                <img src="./images/no-limit.svg" class="feature__img s-1" alt="icon of Responsive">
+                <h3 class="s-2">No Photo Upload Limit</h3>
+                <p>Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.</p>
+            </div>
+
+            <div class="feature feature--embed">
+                <img src="./images/embed.svg" class="feature__img s-1" alt="icon of Responsive">
+                <h3 class="s-2">Available to Embed</h3>
+                <p>Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.</p>
+            </div>
+        </section>
+    </div>
+
+
+    <footer class="dark">
+        <div class="container footer">
+            <a href="link link--logo footer__logo"><img src="./images/logo-white.svg" alt="Logo"></a>
+
+            <ul role="list" class="list list--social col spacing--same footer__social-list">
+                <li class="social-item"><a href="#" class="link link--social"><img src="./images/white-FB.svg" alt=""></a></li>
+                <li class="social-item"><a href="#" class="link link--social"><img src="./images/white-YT.svg" alt=""></a></li>
+                <li class="social-item"><a href="#" class="link link--social"><img src="./images/white-Tw.svg" alt=""></a></li>
+                <li class="social-item"><a href="#" class="link link--social"><img src="./images/white-Pin.svg" alt=""></a></li>
+                <li class="social-item"><a href="#" class="link link--social"><img src="./images/white-Insta.svg" alt=""></a></li>
+            </ul>
+
+            <ul role="list" class="list list--nav-footer spacing--same text-left--medium footer__nav-list">
+                <li class="footer-item"><a href="#" class="link link--nav">Home</a></li>
+                <li class="footer-item"><a href="#" class="link link--nav">Stories</a></li>
+                <li class="footer-item"><a href="#" class="link link--nav">Features</a></li>
+                <li class="footer-item"><a href="#" class="link link--nav">Pricing</a></li>
+            </ul>
+
+            <a href="#" class="btn btn--arrow footer__cta">Get an invite</a>
+            <p class="fineprint fineprint--footer footer__fineprint">Copyright 2020. All Rights Reserved</p>
+
+        </div>
+    </footer>
+</body>
+</html>
+
+

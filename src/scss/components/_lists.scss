@@ -1,0 +1,25 @@
+@use "../abstracts/mixins" as *;
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &--nav-header {
+    --s-1: 1.5rem;
+    padding: 1.2rem;
+  }
+  &--nav-footer {
+    --s-1: 1.2rem;
+  }
+  &--social {
+    --s-1: 15px;
+  }
+
+  @include media("medium") {
+    &--nav-header {
+      --s-1: 2.2rem;
+      padding: 0;
+    }
+  }
+}

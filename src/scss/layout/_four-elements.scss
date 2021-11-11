@@ -1,0 +1,14 @@
+@use "../abstracts/mixins" as *;
+
+.four-elements {
+  max-width: 2600px;
+  margin-inline: auto;
+
+  @include media("small") {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include media("large") {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

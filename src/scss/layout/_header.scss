@@ -1,0 +1,38 @@
+@use "../abstracts/mixins" as *;
+
+.container--header {
+  position: relative;
+  z-index: 1000;
+}
+
+.primary-header {
+  @include media(0px, "medium") {
+    &__cta {
+      display: none;
+    }
+    &__nav {
+      display: block;
+
+      width: 100vw;
+      height: 240px;
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+
+      transform: translateY(-100%);
+      z-index: -1;
+    }
+
+    &__nav[data-visible="true"] {
+      transform: translateY(0);
+    }
+  }
+
+  @include media("medium") {
+    &__toggle {
+      display: none;
+    }
+  }
+}

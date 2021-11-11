@@ -1,0 +1,14 @@
+@use "../abstracts/mixins" as *;
+
+.text-n-img__text {
+  --s-1: 1.5rem;
+  --s-2: 1.5rem;
+  @include media("small") {
+    --s-1: 40px;
+    --s-2: 55px;
+    padding-inline: 3.5rem 2.5rem;
+  }
+
+  padding-block: 3.5rem;
+  padding-inline: 2rem 1.6rem;
+}

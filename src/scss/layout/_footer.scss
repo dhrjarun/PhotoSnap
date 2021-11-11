@@ -1,0 +1,39 @@
+@use "../abstracts/mixins" as *;
+
+.footer {
+  display: grid;
+  place-items: center;
+
+  row-gap: 3rem;
+  padding-block: 4rem;
+
+  @include media("medium") {
+    row-gap: 0;
+    grid-template-columns: max-content max-content 1fr max-content;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "logo             nav-list      ....      cta      "
+      "....             nav-list      ....      ....     "
+      "....             nav-list      ....      ....     "
+      "social-list      nav-list      ....      fineprint";
+
+    &__logo {
+      grid-area: logo;
+    }
+    &__social-list {
+      grid-area: social-list;
+    }
+    &__nav-list {
+      grid-area: nav-list;
+
+      margin-left: 8vw !important;
+    }
+    &__cta {
+      grid-area: cta;
+      justify-self: start;
+    }
+    &__fineprint {
+      grid-area: fineprint;
+    }
+  }
+}

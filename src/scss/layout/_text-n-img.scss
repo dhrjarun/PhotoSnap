@@ -1,0 +1,45 @@
+@use "../abstracts/mixins" as *;
+
+.text-n-img {
+  &__text {
+    display: grid;
+    place-content: center;
+
+    .text-n-img--inverted & {
+      order: -1;
+    }
+  }
+
+  & picture,
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+
+  & img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  @include media("small") {
+    display: flex;
+    height: 600px;
+
+    &__text {
+      flex-basis: 62%;
+    }
+    &__img {
+      flex-basis: 38%;
+      flex-shrink: 0;
+    }
+  }
+
+  @include media("large") {
+    &__text {
+      flex-basis: 43%;
+    }
+    &__img {
+      flex-basis: 57%;
+    }
+  }
+}

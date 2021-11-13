@@ -10,8 +10,7 @@
     }
   }
 
-  & picture,
-  & img {
+  & picture {
     width: 100%;
     height: 100%;
   }
@@ -19,18 +18,24 @@
   & img {
     object-fit: cover;
     object-position: center;
+    width: 100%;
   }
 
   @include media("small") {
     display: flex;
-    height: 600px;
+
+    &__img--big img {
+      height: 600px;
+    }
+    &__img--small img {
+      height: 475px;
+    }
 
     &__text {
       flex-basis: 62%;
     }
     &__img {
       flex-basis: 38%;
-      flex-shrink: 0;
     }
   }
 
@@ -41,5 +46,22 @@
     &__img {
       flex-basis: 57%;
     }
+  }
+}
+
+.text-n-img__text {
+  --s-1: 1.5rem;
+  --s-2: 1.5rem;
+  @include media("small") {
+    --s-1: 40px;
+    --s-2: 55px;
+    padding-inline: 3.5rem 2.5rem;
+  }
+
+  padding-block: 3.5rem;
+  padding-inline: 2rem 2rem;
+
+  &--small p {
+    max-width: 35ch;
   }
 }

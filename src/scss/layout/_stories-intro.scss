@@ -1,0 +1,33 @@
+@use "../abstracts/mixins" as *;
+
+.stories-intro {
+  --s-1: 14px;
+  --s-2: 23px;
+  --s-3: 40px;
+
+  &__text {
+    padding-block: 4rem;
+  }
+
+  &__img img {
+    width: 100%;
+    height: 350px;
+
+    object-fit: cover;
+  }
+
+  p:first-child {
+    font-weight: 700;
+  }
+
+  @include media("medium") {
+    &__img {
+      display: none;
+    }
+    &__text {
+      padding-block: 6rem;
+    }
+
+    background-image: url("/images/moon-of-appalacia.jpg");
+  }
+}

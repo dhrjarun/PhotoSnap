@@ -6,6 +6,7 @@
 }
 
 .primary-header {
+  padding: 1.2rem;
   @include media(0px, "medium") {
     &__cta {
       display: none;

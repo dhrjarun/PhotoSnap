@@ -3,6 +3,13 @@
 .btn {
   cursor: pointer;
 
+  font-size: var(--fs-100);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+
   display: inline-block;
   border: none;
   background-color: transparent;

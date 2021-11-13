@@ -32,19 +32,10 @@ h3 {
 
 p {
   max-width: 40ch;
+}
+p:not(.no-change) {
+  color: var(--clr-dark-90);
   .dark & {
     color: var(--clr-light-90);
   }
-  .light & {
-    color: var(--clr-dark-90);
-  }
-}
-
-a {
-  font-size: var(--fs-100);
-  letter-spacing: 2px;
-
-  text-decoration: none;
-  text-transform: uppercase;
-  color: inherit;
 }

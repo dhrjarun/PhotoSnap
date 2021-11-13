@@ -99,9 +99,38 @@
       width: 100%;
       height: $thickness;
       top: 100%;
+      left: 0;
 
       background-image: linear-gradient(
         to right,
+        var(--clr-accent-1),
+        var(--clr-accent-2),
+        var(--clr-accent-3)
+      );
+    }
+
+    @if $position == "top" {
+      width: 100%;
+      height: $thickness;
+      bottom: 100%;
+      left: 0;
+
+      background-image: linear-gradient(
+        to right,
+        var(--clr-accent-1),
+        var(--clr-accent-2),
+        var(--clr-accent-3)
+      );
+    }
+
+    @if $position == "left" {
+      width: $thickness;
+      height: 100%;
+      top: 0;
+      left: 0;
+
+      background-image: linear-gradient(
+        to bottom,
         var(--clr-accent-1),
         var(--clr-accent-2),
         var(--clr-accent-3)

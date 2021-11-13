@@ -21,13 +21,13 @@
 <body>
     <div class="container container--header">
         <header class="primary-header col jc--sbw ai--center light">
-            <img src="./images/logo.svg" class="primary-header__logo" alt="Logo">
+            <a href="index.html"><img src="./images/logo.svg" class="primary-header__logo" alt="Logo"></a>
             <button aria-expanded="false" aria-controls="nav" tabindex="-1" class="btn btn--nav-toggle primary-header__toggle" ><span class="sr-only">Menu</span></button>
             <nav id="nav" class="primary-header__nav light" data-visible="false">
                 <ul role="list" class="list list--nav-header col--medium spacing--same">
-                    <li class="nav-item"><a href="#" class="link link--nav">Stories</a></li>
-                    <li class="nav-item"><a href="#" class="link link--nav">Features</a></li>
-                    <li class="nav-item"><a href="#" class="link link--nav">Pricing</a></li>
+                    <li class="nav-item"><a href="stories.html" class="link link--nav">Stories</a></li>
+                    <li class="nav-item"><a href="features.html" class="link link--nav">Features</a></li>
+                    <li class="nav-item"><a href="pricing.html" class="link link--nav">Pricing</a></li>
                 </ul>
             </nav>
             <a href="#" class="btn btn--box primary-header__cta">Get an invite</a>
@@ -35,14 +35,14 @@
     </div>
 
     <section class="text-n-img text-n-img--inverted">
-        <div class="text-n-img__img">
+        <div class="text-n-img__img text-n-img__img--big">
             <picture>
                 <source srcset="./images/create-and-share.jpg" media="(min-width: 1025px)">
                 <source srcset="./images/create-and-share-tablet.jpg" media="(min-width: 560px)">
                 <img src="./images/create-and-share-mobile.jpg" alt="Man seeing beautiful nature">
             </picture>
         </div>
-        <div class="text-n-img__text text-left dark">
+        <div class="text-n-img__text text-n-img__text--small text-left dark">
             <h1 class="s-1">Create and Share your photo stories.</h1>
             <p class="s-2">Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.</p>
             <a href="#" class="btn btn--arrow">Get an invite</a>
@@ -50,14 +50,14 @@
     </section>
 
     <section class="text-n-img">
-        <div class="text-n-img__img">
+        <div class="text-n-img__img text-n-img__img--big">
             <picture>
                 <source srcset="./images/beautiful-stories.jpg" media="(min-width: 1025px)">
                 <source srcset="./images/beautiful-stories-tablet.jpg" media="(min-width: 560px)">
                 <img src="./images/beautiful-stories-mobile.jpg" alt="Man seeing beautiful nature">
             </picture>
         </div>
-        <div class="text-n-img__text text-left">
+        <div class="text-n-img__text text-n-img__text--small text-left">
             <h2 class="s-1">BEAUTIFUL STORIES EVERYTIME</h2>
             <p class="s-2">We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.</p>
             <a href="#" class="btn btn--arrow">View the stories</a>
@@ -65,14 +65,14 @@
     </section>
 
     <section class="text-n-img text-n-img--inverted">
-        <div class="text-n-img__img">
+        <div class="text-n-img__img text-n-img__img--big">
             <picture>
                 <source srcset="./images/designed-for-everyone.jpg" media="(min-width: 1025px)">
                 <source srcset="./images/designed-for-everyone-tablet.jpg" media="(min-width: 560px)">
                 <img src="./images/designed-for-everyone-mobile.jpg" alt="Man seeing beautiful nature">
             </picture>
         </div>
-        <div class="text-n-img__text text-left">
+        <div class="text-n-img__text text-n-img__text--small text-left">
             <h2 class="s-1">DESIGNED FOR EVERYONE</h2>
             <p class="s-2">Photosnap can help you create stories that resonate with your audience. Our tool is designed for photographers of all levels, brands, businesses you name it.</p>
             <a href="#" class="btn btn--arrow">View the stories</a>
@@ -81,26 +81,26 @@
 
     <section class="four-elements four-elements--stories text-left">
         <div class="story story--mountains">
-            <h3 class="s-1">The Mountains</h3>
-            <p class="s-2">by John Appleseed</p>
+            <h3 class="s-1 story__name">The Mountains</h3>
+            <p class="s-2 story__author">by John Appleseed</p>
             <p class="story__arrow">Read Story</p>
         </div>
 
         <div class="story story--sunset">
-            <h3 class="s-1">Sunset Cityscapes</h3>
-            <p class="s-2">by Benjsamin Cruz</p>
+            <h3 class="s-1 story__name">Sunset Cityscapes</h3>
+            <p class="s-2 story__author">by Benjsamin Cruz</p>
             <p class="story__arrow">Read Story</p>
         </div>
 
         <div class="story story--days">
-            <h3 class="s-1">18 Days Voyage</h3>
-            <p class="s-2">by Alexei Borodin</p>
+            <h3 class="s-1 story__name">18 Days Voyage</h3>
+            <p class="s-2 story__author">by Alexei Borodin</p>
             <p class="story__arrow">Read Story</p>
         </div>
 
         <div class="story story--archi">
-            <h3 class="s-1">Architecturals</h3>
-            <p class="s-2">by Samantha Brooke</p>
+            <h3 class="s-1 story__name">Architecturals</h3>
+            <p class="s-2 story__author">by Samantha Brooke</p>
             <p class="story__arrow">Read Story</p>
         </div>
     </section>
@@ -130,7 +130,7 @@
 
     <footer class="dark">
         <div class="container footer">
-            <a href="link link--logo footer__logo"><img src="./images/logo-white.svg" alt="Logo"></a>
+            <a class="link link--logo footer__logo" href="index.html"><img src="./images/logo-white.svg" alt="Logo"></a>
 
             <ul role="list" class="list list--social col spacing--same footer__social-list">
                 <li class="social-item"><a href="#" class="link link--social"><img src="./images/white-FB.svg" alt=""></a></li>
@@ -141,10 +141,10 @@
             </ul>
 
             <ul role="list" class="list list--nav-footer spacing--same text-left--medium footer__nav-list">
-                <li class="footer-item"><a href="#" class="link link--nav">Home</a></li>
-                <li class="footer-item"><a href="#" class="link link--nav">Stories</a></li>
-                <li class="footer-item"><a href="#" class="link link--nav">Features</a></li>
-                <li class="footer-item"><a href="#" class="link link--nav">Pricing</a></li>
+                <li class="footer-item"><a href="index.html" class="link link--nav">Home</a></li>
+                <li class="footer-item"><a href="stories.html" class="link link--nav">Stories</a></li>
+                <li class="footer-item"><a href="features.html" class="link link--nav">Features</a></li>
+                <li class="footer-item"><a href="pricing.html" class="link link--nav">Pricing</a></li>
             </ul>
 
             <a href="#" class="btn btn--arrow footer__cta">Get an invite</a>

@@ -1,9 +1,21 @@
 .dark {
-  background-color: var(--clr-dark-100);
-  color: var(--clr-light-100);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .light {
-  background-color: var(--clr-light-100);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.little-white {
+  background-color: var(--clr-light-90);
+  color: rgb(0, 0, 0);
+}
+
+.clr-dark {
   color: var(--clr-dark-100);
+}
+.clr-light {
+  color: var(--clr-light-100);
 }

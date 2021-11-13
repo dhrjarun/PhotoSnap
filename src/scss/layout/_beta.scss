@@ -1,0 +1,24 @@
+@use "../abstracts/mixins" as *;
+
+.beta {
+  &__container {
+    @include color-strip("left");
+    padding: 3.5rem 0;
+
+    background-image: url("/images/bg-beta-mobile.jpg");
+
+    @include media("small") {
+      background-image: url("/images/bg-beta-tablet.jpg");
+    }
+
+    @include media("medium") {
+      background-image: url("/images/bg-beta.jpg");
+    }
+  }
+  @include media(0, "medium") {
+    &__title {
+      margin-inline: auto;
+      margin-bottom: 0.8em;
+    }
+  }
+}

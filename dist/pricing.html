@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photosnap</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/main.77bb5cfd.css">
+
+    <!-- scripts -->
+    <script src="/navigation.2c19394f.js" defer=""></script>
+    <script src="/toggle.0b92bf38.js" defer=""></script>
+
+</head>
+<body>
+    <div class="container container--header">
+        <header class="primary-header col jc--sbw ai--center light">
+            <a href="/index.html"><img src="/logo.236e4034.svg" class="primary-header__logo" alt="Logo"></a>
+            <button aria-expanded="false" aria-controls="nav" tabindex="-1" class="btn btn--nav-toggle primary-header__toggle"><span class="sr-only">Menu</span></button>
+            <nav id="nav" class="primary-header__nav light" data-visible="false">
+                <ul role="list" class="list list--nav-header col--medium spacing--same">
+                    <li class="nav-item"><a href="/stories.html" class="link link--nav">Stories</a></li>
+                    <li class="nav-item"><a href="/features.html" class="link link--nav">Features</a></li>
+                    <li class="nav-item"><a href="/pricing.html" class="link link--nav">Pricing</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn btn--box primary-header__cta">Get an invite</a>
+        </header>
+    </div>
+
+    <section class="text-n-img text-n-img--inverted">
+        <div class="text-n-img__img text-n-img__img--small">
+            <picture>
+                <source srcset="/pricing-bg.9f810fde.jpg" media="(min-width: 1025px)">
+                <source srcset="/pricing-bg-tablet.0a89d3c3.jpg" media="(min-width: 560px)">
+                <img src="/pricing-bg-mobile.348262e2.jpg" alt="Man seeing beautiful nature">
+            </picture>
+        </div>
+        <div class="text-n-img__text text-n-img__text--small text-left dark">
+            <h1 class="s-1">Pricing</h1>
+            <p class="s-2">Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="three-elements three-elements--pricing">
+
+            <div class="toggle">
+                <input type="checkbox" class="toggle__checkbox" id="price-check">
+                
+                <p class="toggle__label">Monthly</p>
+                <label class="toggle__body" for="price-check"></label>
+                <p class="toggle__label">Yearly</p>
+            </div>
+
+            <div class="pricing-card pricing-card--low little-white">
+                <h3 class="pricing-card__title s-1">Basic</h3>
+                <p class="pricing-card__body s-2">Includes basic usage of our platform. Recommended for new and aspiring photographers.</p>
+                
+                <p class="pricing-card__price s-2 monthly"><span class="pricing-card__amount clr-dark">$19.00</span><br>per month</p>
+                <p class="pricing-card__price s-2 yearly" hidden=""><span class="pricing-card__amount clr-dark">$190.00</span><br>per year</p>
+                
+                <button class="btn btn--box pricing-card__btn">Pick plan</button>
+            </div>
+
+            <div class="pricing-card pricing-card--high dark">
+                <h3 class="pricing-card__title s-1">pro</h3>
+                <p class="pricing-card__body s-2">More advanced features available. Recommended for photography veterans and professionals.</p>
+                
+                <p class="pricing-card__price s-2 monthly"><span class="pricing-card__amount clr-light">$39.00</span><br>per month</p>
+                <p class="pricing-card__price s-2 yearly" hidden=""><span class="pricing-card__amount clr-light">$390.00</span><br>per year</p>
+                
+                <button class="btn btn--box pricing-card__btn">Pick plan</button>
+            </div>
+
+            <div class="pricing-card pricing-card--low little-white">
+                <h3 class="pricing-card__title s-1">Businesses</h3>
+                <p class="pricing-card__body s-2">Additional features available such as more detailed metrics. Recommended for business owners.</p>
+                
+                <p class="pricing-card__price s-2 monthly"><span class="pricing-card__amount clr-dark">$99.00</span><br>per year</p>
+                <p class="pricing-card__price s-2 yearly" hidden=""><span class="pricing-card__amount clr-dark">$990.00</span><br>per month</p>
+                
+                <button class="btn btn--box pricing-card__btn">Pick plan</button>
+            </div>
+        </section>
+    </div>
+
+
+    <section class="container container--pricing-table compare">
+        <h2 class="compare__title">Compare</h2>
+        <div class="compare-table">
+            <div class="compare-row compare-row--header">
+                <p class="compare-row__feature">The features</p>
+                <p class="compare-row__basic">Basic</p>
+                <p class="compare-row__pro">pro</p>
+                <p class="compare-row__business">business</p>
+            </div>
+            
+            <div class="compare-row compare-row--body">
+                <p class="compare-row__feature">UNLIMITED STORY POSTING</p>
+                <p class="compare-row__basic cell-checked"></p>
+                <p class="compare-row__pro cell-checked"></p>
+                <p class="compare-row__business cell-checked"></p>
+            </div>
+
+            <div class="compare-row compare-row--body">
+                <p class="compare-row__feature">UNLIMITED PHOTO UPLOAD</p>
+                <p class="compare-row__basic cell-checked"></p>
+                <p class="compare-row__pro cell-checked"></p>
+                <p class="compare-row__business cell-checked"></p>
+            </div>
+
+
+            <div class="compare-row compare-row--body">
+                <p class="compare-row__feature">EMBEDDING CUSTOM CONTENT</p>
+                <p class="compare-row__basic"></p>
+                <p class="compare-row__pro cell-checked"></p>
+                <p class="compare-row__business cell-checked"></p>
+            </div>
+
+            <div class="compare-row compare-row--body">
+                <p class="compare-row__feature">CUSTOMIZE METADATA</p>
+                <p class="compare-row__basic"></p>
+                <p class="compare-row__pro cell-checked"></p>
+                <p class="compare-row__business cell-checked"></p>
+            </div>
+
+            <div class="compare-row compare-row--body">
+                <p class="compare-row__feature">ADVANCED MATRICS</p>
+                <p class="compare-row__basic"></p>
+                <p class="compare-row__pro cell-checked"></p>
+                <p class="compare-row__business cell-checked"></p>
+            </div>
+
+            <div class="compare-row compare-row--body">
+                <p class="compare-row__feature">PHOTO DOWNLOADS</p>
+                <p class="compare-row__basic"></p>
+                <p class="compare-row__pro"></p>
+                <p class="compare-row__business cell-checked"></p>
+            </div>
+
+            <div class="compare-row compare-row--body">
+                <p class="compare-row__feature">SEARCH ENGINE INDEXING</p>
+                <p class="compare-row__basic"></p>
+                <p class="compare-row__pro"></p>
+                <p class="compare-row__business cell-checked"></p>
+            </div>
+
+            <div class="compare-row compare-row--body">
+                <p class="compare-row__feature">CUSTOM ANALYTICS</p>
+                <p class="compare-row__basic"></p>
+                <p class="compare-row__pro"></p>
+                <p class="compare-row__business cell-checked"></p>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <section class="dark beta__container">
+        <div class="container text-left--medium col--medium jc--sbw ai--center beta">
+            <h2 class="beta__title">WE'RE IN BETA. GET YOUR INVITE TODAY!</h2>
+            <a href="#" class="btn btn--arrow beta_btn">Get an invite</a>
+        </div>
+    </section>
+
+    <footer class="dark">
+        <div class="container footer">
+            <a class="link link--logo footer__logo" href="/index.html"><img src="/logo-white.ea484c5a.svg" alt="Logo"></a>
+
+            <ul role="list" class="list list--social col spacing--same footer__social-list">
+                <li class="social-item"><a href="#" class="link link--social"><img src="/white-FB.cda8a77b.svg" alt=""></a></li>
+                <li class="social-item"><a href="#" class="link link--social"><img src="/white-YT.4b4b91e1.svg" alt=""></a></li>
+                <li class="social-item"><a href="#" class="link link--social"><img src="/white-Tw.cb7f397d.svg" alt=""></a></li>
+                <li class="social-item"><a href="#" class="link link--social"><img src="/white-Pin.f5b15db5.svg" alt=""></a></li>
+                <li class="social-item"><a href="#" class="link link--social"><img src="/white-Insta.2cedcf6d.svg" alt=""></a></li>
+            </ul>
+
+            <ul role="list" class="list list--nav-footer spacing--same text-left--medium footer__nav-list">
+                <li class="footer-item"><a href="/index.html" class="link link--nav">Home</a></li>
+                <li class="footer-item"><a href="/stories.html" class="link link--nav">Stories</a></li>
+                <li class="footer-item"><a href="/features.html" class="link link--nav">Features</a></li>
+                <li class="footer-item"><a href="/pricing.html" class="link link--nav">Pricing</a></li>
+            </ul>
+
+            <a href="#" class="btn btn--arrow footer__cta">Get an invite</a>
+            <p class="fineprint fineprint--footer footer__fineprint">Copyright 2020. All Rights Reserved</p>
+
+        </div>
+    </footer>
+</body>
+</html>
+
+

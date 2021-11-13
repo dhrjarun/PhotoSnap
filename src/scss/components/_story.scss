@@ -27,8 +27,13 @@
   }
 
   p {
+    color: var(--clr-light-100);
+  }
+
+  &__author,
+  &__date {
     font-size: var(--fs-300);
-    letter-spacing: 0.15px;
+    letter-spacing: 0.2px;
   }
 
   &__arrow {

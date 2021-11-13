@@ -1,0 +1,46 @@
+@use "../abstracts/mixins" as *;
+
+.pricing-card {
+  padding-inline: 3rem;
+  --s-1: 2rem;
+  --s-2: 3rem;
+
+  max-width: 500px;
+  margin-inline: auto;
+
+  & > * {
+    margin-inline: auto;
+  }
+
+  &__title {
+    font-size: var(--fs-600);
+  }
+  &__body {
+    // max-width: 30ch;
+  }
+
+  &__price.not-you {
+    display: none;
+
+    & + .yearly {
+      display: block;
+    }
+  }
+
+  &__amount {
+    font-size: var(--fs-700);
+  }
+  &__btn {
+    width: 100%;
+    // max-width: 22em;
+  }
+
+  &--low {
+    padding-block: 2rem;
+  }
+  &--high {
+    padding-block: 4rem;
+
+    @include color-strip("top");
+  }
+}

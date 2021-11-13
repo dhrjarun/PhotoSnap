@@ -1,0 +1,100 @@
+@use "../abstracts/mixins" as *;
+
+.compare-row {
+  p {
+    font-size: var(--fs-100);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 1.5px;
+  }
+
+  display: grid;
+  grid-template-columns: 1em 3fr repeat(3, 1fr) 1em;
+  grid-template-areas: "....  feature  basic  pro  business  ....";
+
+  padding-block: 1.4rem;
+  @include media(0, "small") {
+    &--body {
+      grid-template-columns: 1em repeat(3, 1fr) 1em;
+      grid-template-areas:
+        "....  feature  feature  feature   ...."
+        "....  basic    pro      business  ....";
+
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__feature {
+    grid-area: feature;
+    place-self: start;
+  }
+  &__basic {
+    grid-area: basic;
+    width: 100%;
+  }
+  &__pro {
+    grid-area: pro;
+    width: 100%;
+  }
+  &__business {
+    grid-area: business;
+    width: 100%;
+  }
+
+  &--header {
+    border-bottom: 1px solid black;
+  }
+  &--body {
+    border-bottom: 1px solid rgba($color: black, $alpha: 0.19);
+  }
+}
+
+@include media(0, "small") {
+  .compare-row--header {
+    .compare-row__basic,
+    .compare-row__pro,
+    .compare-row__business {
+      display: none;
+    }
+  }
+
+  .compare-row--body {
+    .compare-row__feature {
+      margin-bottom: 1.6em;
+    }
+
+    .compare-row__basic::before,
+    .compare-row__pro::before,
+    .compare-row__business::before {
+      height: 100%;
+      display: block;
+      text-align: left;
+
+      margin-bottom: 0.15em;
+    }
+    .compare-row__basic::before {
+      content: "Basic";
+    }
+    .compare-row__pro::before {
+      content: "Pro";
+    }
+    .compare-row__business::before {
+      content: "Business";
+    }
+    .cell-checked::after {
+      background-position: center left;
+    }
+  }
+}
+
+.cell-checked::after {
+  content: "";
+  width: 100%;
+  height: 15px;
+  display: block;
+
+  background-image: url("/images/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

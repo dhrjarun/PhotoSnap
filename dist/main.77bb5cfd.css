@@ -1034,8 +1034,7 @@ p:not(.no-change) {
     background-image: url("/bg-beta.cfbf4d91.jpg");
   }
 }
-.beta__img-container {
-  display: inline-block;
+.beta__btn {
   width: 180px;
 }
 @media (min-width: 0) and (max-width: 768px) {

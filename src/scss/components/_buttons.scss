@@ -1,4 +1,5 @@
 @use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
 
 .btn {
   cursor: pointer;
@@ -17,22 +18,27 @@
   &--box {
     padding: 0.9em 2em;
 
-    transition: background-color 250ms, color 250ms;
+    transition: background-color 400ms, color 400ms;
 
     //light
-    color: var(--clr-light-100);
-    background-color: var(--clr-dark-100);
-
+    background-color: clr(dark);
+    color: clr(light);
     //dark
     .dark & {
-      background-color: var(--clr-light-100);
-      color: var(--clr-dark-100);
+      background-color: clr(light);
+      color: clr(dark);
     }
 
     &:hover,
     &:focus {
-      background-color: var(--clr-light-90);
-      color: var(--clr-dark-100);
+      background-color: rgba($color: clr(dark), $alpha: 0.15);
+      color: clr(dark);
+    }
+
+    .dark &:hover,
+    .dark &:focus {
+      background-color: rgba($color: clr(light), $alpha: 0.7);
+      color: clr(light);
     }
   }
 

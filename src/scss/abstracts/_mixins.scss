@@ -1,4 +1,5 @@
 @use "./maps" as *;
+@use "./functions" as *;
 
 // media
 @mixin media($min, $max: null) {
@@ -103,9 +104,9 @@
 
       background-image: linear-gradient(
         to right,
-        var(--clr-accent-1),
-        var(--clr-accent-2),
-        var(--clr-accent-3)
+        clr(accent1),
+        clr(accent2),
+        clr(accent3)
       );
     }
 
@@ -117,9 +118,9 @@
 
       background-image: linear-gradient(
         to right,
-        var(--clr-accent-1),
-        var(--clr-accent-2),
-        var(--clr-accent-3)
+        clr(accent1),
+        clr(accent2),
+        clr(accent3)
       );
     }
 

@@ -15,6 +15,12 @@
       background-image: url("/images/bg-beta.jpg");
     }
   }
+
+  &__img-container {
+    display: inline-block;
+    width: 180px;
+  }
+
   @include media(0, "medium") {
     &__title {
       margin-inline: auto;

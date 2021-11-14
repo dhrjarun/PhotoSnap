@@ -1,0 +1,25 @@
+# Query: little-white
+# ContextLines: 1
+
+6 results - 3 files
+
+.cache/ee/5f46470acfdc1c083f0ffcc66dd220.json:
+  1: ⟪ 6541 characters skipped ⟫bel class=\"toggle__body\" for=\"price-check\"></label>\n                <p class=\"toggle__label no-change\">Yearly</p>\n            </div>\n\n            <div class=\"pricing-card pricing-card--low little-white\">\n                <h3 class=\"pricing-card__title s-1\">Basic</h3>\n                <p class=\"pricing-card__body s-2\">Includes basic usage of our platform. Recommended for new and aspiring photographers.</p>\n                \n                <p class=\"pricing-card__price s-2 monthly\"><span class=\"pricing-card__amount clr-dark\">$19.00</span><br>per month</p>\n                <p class=\"pricing-card__price s-2 yearly\" hidden=\"\"><span class=\"pricing-card__amount clr-dark\">$190.00</span><br>per year</p>\n                \n                <button class=\"btn btn--box pricing-card__btn\">Pick plan</button>\n            </div>\n\n            <div class=\"pricing-card pricing-card--high dark\">\n                <h3 class=\"pricing-card__title s-1\">pro</h3>\n                <p class=\"pricing-card__body s-2\">More advanced features available. Recommended for photography veterans and professionals.</p>\n                \n                <p class=\"pricing-card__price s-2 monthly\"><span class=\"pricing-card__amount clr-light\">$39.00</span><br>per month</p>\n                <p class=\"pricing-card__price s-2 yearly\" hidden=\"\"><span class=\"pricing-card__amount clr-light\">$390.00</span><br>per year</p>\n                \n                <button class=\"btn btn--box pricing-card__btn\">Pick plan</button>\n            </div>\n\n            <div class=\"pricing-card pricing-card--low little-white\">\n                <h3 class=\"pricing-card__title s-1\">Businesses</h3>\n                <p class=\"pricing-card__body s-2\">Additional features available such as more detailed metrics. Recommended for business owners.</p>\n                \n                <p class=\"pricing-card__price s-2 monthly\"><span class=\"pricing-card__amount clr-dark\">$99.00</span><br>per month</p>\n                <p class=\"pricing-card__price s-2 yearly\" hidden=\"\"><span class=\"pricing-card__amount clr-dark\">$990.00</span><br>per year</p>\n                \n                <button class=\"btn btn--box pricing-card__btn\">Pick plan</button>\n            </div>\n        </section>\n    </div>\n\n\n    <section class=\"container container--pricing-table compare\">\n        <h2 class=\"compare__title\">Compare</h2>\n        <div class=\"compare-table\">\n            <div class=\"compare-row compare-row--header\">\n                <p class=\"compare-row__feature\">The features</p>\n        
+
+dist/pricing.html:
+  62  
+  63:             <div class="pricing-card pricing-card--low little-white">
+  64                  <h3 class="pricing-card__title s-1">Basic</h3>
+
+  82  
+  83:             <div class="pricing-card pricing-card--low little-white">
+  84                  <h3 class="pricing-card__title s-1">Businesses</h3>
+
+src/pricing.html:
+  62  
+  63:             <div class="pricing-card pricing-card--low little-white">
+  64                  <h3 class="pricing-card__title s-1">Basic</h3>
+
+  82  
+  83:             <div class="pricing-card pricing-card--low little-white">
+  84                  <h3 class="pricing-card__title s-1">Businesses</h3>

@@ -1,5 +1,7 @@
 @use "../abstracts/mixins" as *;
 
+$row-padding: 1.4rem;
+
 .compare-row {
   p {
     font-size: var(--fs-100);
@@ -13,7 +15,7 @@
   grid-template-columns: 1em 3fr repeat(3, 1fr) 1em;
   grid-template-areas: "....  feature  basic  pro  business  ....";
 
-  padding-block: 1.4rem;
+  padding-block: $row-padding;
   @include media(0, "small") {
     &--body {
       grid-template-columns: 1em repeat(3, 1fr) 1em;

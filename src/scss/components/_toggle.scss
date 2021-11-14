@@ -1,4 +1,5 @@
 @use "sass:math";
+@use "../abstracts/functions" as *;
 
 $toggle_body-width: 60px;
 $toggle_body-height: 30px;
@@ -30,7 +31,7 @@ $distance: $toggle_body-width - $ball-size - (2 * $space);
     height: $toggle_body-height;
 
     border-radius: $body-radius;
-    background-color: rgba($color: #000000, $alpha: 0.2);
+    background-color: rgba($color: clr(dark), $alpha: 0.15);
     position: relative;
 
     &::before {
@@ -44,7 +45,7 @@ $distance: $toggle_body-width - $ball-size - (2 * $space);
       bottom: $space;
       left: $space;
 
-      background-color: black;
+      background-color: clr(dark);
 
       transform: translateX(0px);
       transition: transform 230ms ease-in-out;

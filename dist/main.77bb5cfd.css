@@ -152,10 +152,10 @@ p {
 }
 
 p:not(.no-change) {
-  color: var(--clr-dark-90);
+  color: #737373;
 }
 .dark p:not(.no-change) {
-  color: var(--clr-light-90);
+  color: #adadad;
 }
 
 .col {
@@ -195,17 +195,17 @@ p:not(.no-change) {
   color: black;
 }
 
-.little-white {
-  background-color: var(--clr-light-90);
+.little-light {
+  background-color: #e6e6e6;
   color: black;
 }
 
 .clr-dark {
-  color: var(--clr-dark-100);
+  color: black;
 }
 
 .clr-light {
-  color: var(--clr-light-100);
+  color: white;
 }
 
 .container {
@@ -456,17 +456,21 @@ p:not(.no-change) {
 }
 .btn--box {
   padding: 0.9em 2em;
-  transition: background-color 250ms, color 250ms;
-  color: var(--clr-light-100);
-  background-color: var(--clr-dark-100);
+  transition: background-color 400ms, color 400ms;
+  background-color: black;
+  color: white;
 }
 .dark .btn--box {
-  background-color: var(--clr-light-100);
-  color: var(--clr-dark-100);
+  background-color: white;
+  color: black;
 }
 .btn--box:hover, .btn--box:focus {
-  background-color: var(--clr-light-90);
-  color: var(--clr-dark-100);
+  background-color: rgba(0, 0, 0, 0.15);
+  color: black;
+}
+.dark .btn--box:hover, .dark .btn--box:focus {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: white;
 }
 .btn--arrow::after {
   content: "";
@@ -553,10 +557,10 @@ p:not(.no-change) {
   color: inherit;
 }
 .link:hover {
-  color: rgba(0, 0, 0, 0.22);
+  color: rgba(0, 0, 0, 0.3);
 }
 .dark .link:hover {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.5);
 }
 .link--social > * {
   transition: opacity 300ms;
@@ -588,7 +592,7 @@ p:not(.no-change) {
   height: 5px;
   top: 100%;
   left: 0;
-  background-image: linear-gradient(to right, var(--clr-accent-1), var(--clr-accent-2), var(--clr-accent-3));
+  background-image: linear-gradient(to right, #ffc694, #bc7198, #5c7aff);
 }
 .story::after {
   opacity: 0;
@@ -715,7 +719,7 @@ p:not(.no-change) {
   height: 5px;
   bottom: 100%;
   left: 0;
-  background-image: linear-gradient(to right, var(--clr-accent-1), var(--clr-accent-2), var(--clr-accent-3));
+  background-image: linear-gradient(to right, #ffc694, #bc7198, #5c7aff);
 }
 
 .toggle {
@@ -737,7 +741,7 @@ p:not(.no-change) {
   width: 60px;
   height: 30px;
   border-radius: 50px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.15);
   position: relative;
 }
 .toggle__body::before {
@@ -1029,6 +1033,10 @@ p:not(.no-change) {
   .beta__container {
     background-image: url("/bg-beta.cfbf4d91.jpg");
   }
+}
+.beta__img-container {
+  display: inline-block;
+  width: 180px;
 }
 @media (min-width: 0) and (max-width: 768px) {
   .beta__title {
